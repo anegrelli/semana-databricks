@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bdv
+    database: ubereats
+    schema: default
+    tables:
+      - name: bsat_users_enriched
+      - name: ref_country
+      - name: pit_user_order_status
+      - name: latest_order_status
+      - name: blink_user_order_activity

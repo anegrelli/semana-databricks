@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "User dimension from enriched BDV user data"
+    columns:
+      - name: user_key
+        description: "Business hashed key for the user"
+        tests:
+          - not_null
+
+  - name: fact_orders
+    description: "Fact table with order activity, joined with BDV metrics"
+    columns:
+      - name: order_key
+        description: "Unique identifier for the order"
+        tests:
+          - not_null
+      - name: user_key
+        description: "FK to dim_users"

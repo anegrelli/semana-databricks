@@ -39,3 +39,7 @@ terraform/set-env.sh
 src/DeliveryServices/logs/
 
 src/DeliveryServices/target/
+
+src/DeliveryServices/.user.yml
+
+src/DeliveryServices/profiles.yml

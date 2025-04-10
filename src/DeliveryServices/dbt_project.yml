@@ -1,0 +1,19 @@
+name: delivery_services
+version: 1.0.0
+profile: delivery_services
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  delivery_services:
+    gold_star_schema:
+      +materialized: table
+    gold_obt:
+      +materialized: table
+    views:
+      +materialized: view
+
+flags:
+  use_materialization_v2: true
