@@ -35,3 +35,7 @@ terraform/set-env.sh
 .vscode/
 
 .windsurfrules
+
+src/DeliveryServices/logs/
+
+src/DeliveryServices/target/
